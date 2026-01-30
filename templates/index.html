@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block main %}
+<div class="d-flex justify-content-between align-items-center mb-5">
+    <h1 class="fw-bold">System Dashboard</h1>
+    <div class="text-primary">Welcome, {{ session.username }}</div>
+</div>
+
+<div class="row g-4">
+    <div class="col-lg-8">
+        <div class="glass-card" style="max-width: 100%;">
+            <h4 class="fw-bold mb-4">Your Mood Tracker</h4>
+            {% if mood_stats %}
+                {% for mood, pct in mood_stats.items() %}
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between small mb-1">
+                        <span>{{ mood }}</span><span>{{ pct }}%</span>
+                    </div>
+                    <div class="bar-outer"><div class="bar-inner" style="width: {{ pct }}%"></div></div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <p class="text-center py-5">No entries yet.</p>
+            {% endif %}
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <a href="/write" class="btn-neon text-center d-block py-4 text-decoration-none">NEW ENTRY</a>
+    </div>
+</div>
+{% endblock %}

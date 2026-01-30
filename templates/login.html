@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block auth %}
+<div class="glass-card">
+    <div class="text-center mb-4">
+        <h2 class="fw-bold">Login</h2>
+        <p class="text-white-50">Welcome back to your journal.</p>
+    </div>
+    {% if error %}<div class="alert alert-danger py-2 small mb-3">{{ error }}</div>{% endif %}
+    <form action="/login" method="post" class="d-flex flex-column gap-3">
+        <input name="username" class="form-control custom-input" placeholder="Username" type="text" required>
+        <input name="password" class="form-control custom-input" placeholder="Password" type="password" required>
+        <button type="submit" class="btn-neon">Sign In</button>
+    </form>
+    <p class="text-center mt-4 small">New user? <a href="/register" class="text-primary">Create Account</a></p>
+</div>
+{% endblock %}

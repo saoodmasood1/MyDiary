@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block main %}
+<div class="glass-card" style="max-width: 100%;">
+    <h2 class="fw-bold mb-4">Capture Your Day</h2>
+    <form action="/write" method="post">
+        <input name="title" class="custom-input w-100 mb-3" placeholder="Title" type="text" required>
+        <textarea name="content" class="custom-input w-100 mb-3" rows="10" placeholder="Your thoughts..." required></textarea>
+        <button type="submit" class="btn-neon">Analyze & Save</button>
+    </form>
+</div>
+{% endblock %}

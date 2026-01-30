@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyDiary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="{% if not session.user_id %}auth-screen{% endif %}">
+
+    {% if session.user_id %}
+    <aside class="sidebar">
+        <div class="mb-5 text-center"><h2 class="text-primary fw-bold">MyDiary</h2></div>
+        <nav>
+            <a href="/" class="nav-link"><i class="fas fa-home"></i> Overview</a>
+            <a href="/entries" class="nav-link"><i class="fas fa-book"></i> Archive</a>
+            <a href="/write" class="nav-link"><i class="fas fa-pen"></i> New Entry</a>
+            <a href="/logout" class="nav-link mt-5 text-danger"><i class="fas fa-power-off"></i> Logout</a>
+        </nav>
+    </aside>
+    <main class="main-view">
+        {% block main %}{% endblock %}
+    </main>
+    {% else %}
+        {% block auth %}{% endblock %}
+    {% endif %}
+
+</body>
+</html>
