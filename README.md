@@ -8,6 +8,7 @@ The project is built around the idea that human emotions are layered and overlap
 
 All diary entries are private, user-specific, and securely managed.
 
+Video Demo: [https://youtu.be/lmjDTEZmsgo]
 ---
 
 ## **Key Features**
