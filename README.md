@@ -112,16 +112,33 @@ Defines the application’s visual identity using a dark **Deep Midnight** theme
 
 ---
 
-## **How to Run Locally**
+## **Installation and Local Setup**
+To get a local copy up and running, follow these simple steps:
 
-Install dependencies:
+1. Clone the repository:
 ```bash
-pip install flask flask-session
-Initialize the SQLite database.
+git clone https://github.com/saoodmasood1/MyDiary.git
+cd MyDiary
+```
 
-Run the application:
+2. Install dependencies It is recommended to use a virtual environment, but you can install directly via:
 
-flask run
+```bash
+pip install -r requirements.txt
+```
+
+3. Initialize the Database Run the initialization script to generate the diary.db file and the necessary tables:
+
+```bash
+python make_diarydb.py
+```
+
+4. Run the Application:
+```bash
+python -m flask run
+```
+
+Access the app at http://127.0.0.1:5000 in your browser.
 
 ## **Final Note**
 MyDiary represents a transition from writing isolated scripts to designing a complete, user-focused web application. It integrates backend logic, frontend design, data persistence, and algorithmic thinking into a cohesive product centered on self-reflection and emotional awareness.
