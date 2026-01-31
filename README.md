@@ -7,13 +7,17 @@
 The project is built around the idea that human emotions are layered and overlapping. A single diary entry can express calmness and loneliness, hope and anxiety, or gratitude and exhaustion at the same time. MyDiary captures this emotional complexity through a **12-mood probability spectrum**, offering users a reflective and analytical view of their emotional patterns over time.
 
 All diary entries are private, user-specific, and securely managed.
+---
+
+Video Demo: https://youtu.be/lmjDTEZmsgo
+
+---
+
+## **Screenshots**
 
 ![MyDiary Dashboard](./images/screenshot1.png)
 ![MyDiary Journals](./images/screenshot2.png)
 ![MyDiary Writing](./images/screenshot3.png)
----
-
-Video Demo: https://youtu.be/lmjDTEZmsgo
 
 ---
 
