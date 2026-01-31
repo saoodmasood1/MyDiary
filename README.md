@@ -8,6 +8,11 @@ The project is built around the idea that human emotions are layered and overlap
 
 All diary entries are private, user-specific, and securely managed.
 
+![MyDiary Dashboard](./images/screenshot1.png)
+![MyDiary Journals](./images/screenshot2.png)
+![MyDiary Writing](./images/screenshot3.png)
+---
+
 Video Demo: https://youtu.be/lmjDTEZmsgo
 
 ---
