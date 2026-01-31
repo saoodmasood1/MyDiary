@@ -4,9 +4,8 @@
 
 **MyDiary** is a full-stack web application that reimagines traditional journaling by combining private diary writing with probabilistic emotional analysis. Instead of labeling entries as simply *positive* or *negative*, MyDiary estimates the likelihood of multiple emotional states within each entry and visualizes long-term mood trends in an interactive dashboard.
 
-The project is built around the idea that human emotions are layered and overlapping. A single diary entry can express calmness and loneliness, hope and anxiety, or gratitude and exhaustion at the same time. MyDiary captures this emotional complexity through a **12-mood probability spectrum**, offering users a reflective and analytical view of their emotional patterns over time.
+The project is built around the idea that human emotions are layered and overlapping. A single diary entry can express calmness and loneliness, hope and anxiety, or gratitude and exhaustion at the same time. MyDiary captures this emotional complexity through a **12-mood probability spectrum**, offering users a reflective and analytical view of their emotional patterns over time. All diary entries are private, user-specific, and securely managed.
 
-All diary entries are private, user-specific, and securely managed.
 ---
 
 Video Demo: https://youtu.be/lmjDTEZmsgo
